@@ -22,9 +22,21 @@ class ClientController extends Controller
     public function store(Request $request)
     {
         //validate the request
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required|email|unique:clients',
+            'phone' => 'required'
+        ]);
 
         //add a new client to the database
-        
+        $client = Client::create($request->all());
+
+        return response()->json(
+            [
+                'message' => 'Client created successfully',
+                'data' => $client
+            ], 200
+        );
     }
 
     /**
@@ -32,7 +44,16 @@ class ClientController extends Controller
      */
     public function show(string $id)
     {
-        //
+        //show client details
+        $client = Client::find($id);
+
+        //return a response
+        if($client) {
+            return response()->json($client, 200);
+        } else {
+            return response()->json(['message' => 'Client not found'], 404);
+        }
+        
     }
 
     /**
@@ -40,7 +61,26 @@ class ClientController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        //validate the request
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required|email|unique:clients,email,' . $id,
+            'phone' => 'required'
+        ]);
+
+        //update the client data in database
+        $client = Client::find($id);
+        if($client) {
+            $client->update($request->all());
+            return response()->json(
+                [
+                    'message' => 'Client update successfully',
+                    'data' => $client
+                ], 200
+            );
+        } else {
+            return response()->json(['message' => 'Client not found'], 404);
+        }
     }
 
     /**
@@ -48,6 +88,17 @@ class ClientController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        //delete the client
+        $client = Client::find($id);
+        if($client) {
+            $client->delete();
+            return response()->json(
+                [
+                    'message' => 'Client deleted successfully'
+                ], 200
+            );
+        } else {
+            return response()->json(['message' => 'Client not found'], 404);
+        }
     }
 }
