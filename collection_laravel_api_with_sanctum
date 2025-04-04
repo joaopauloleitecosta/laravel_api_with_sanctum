@@ -1,0 +1,195 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "laravel_api_with_sanctum",
+    "collectionId": "2ad06dac-1cd1-417f-8119-84cfe2b34dba",
+    "dateExported": "2025-04-04T16:31:29.592Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "e34c3202-fc00-4964-9226-37dc5501d826",
+            "colId": "2ad06dac-1cd1-417f-8119-84cfe2b34dba",
+            "containerId": "",
+            "name": "Status",
+            "url": "http://localhost/laravel_api_with_sanctum/public/api/status",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2025-03-17T17:49:11.025Z",
+            "modified": "2025-03-21T13:42:19.355Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "1|nxa8jI41V8NI4CMPGTFG2ro8hFnudyGt8EvFkrQM54013299"
+            }
+        },
+        {
+            "_id": "809f1b46-516f-43d1-9203-655f635d8491",
+            "colId": "2ad06dac-1cd1-417f-8119-84cfe2b34dba",
+            "containerId": "",
+            "name": "All clients",
+            "url": "http://localhost/laravel_api_with_sanctum/public/api/clients",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2025-03-17T18:58:20.079Z",
+            "modified": "2025-03-21T14:12:03.236Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "3|hdXy8DfJp8iFOFigLUmNd0FvazRG0rS4ugoLO1HMf3558eef"
+            }
+        },
+        {
+            "_id": "8ddfb0d4-3534-4be2-b009-b7c8d30294c4",
+            "colId": "2ad06dac-1cd1-417f-8119-84cfe2b34dba",
+            "containerId": "",
+            "name": "Login",
+            "url": "http://localhost/laravel_api_with_sanctum/public/api/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-03-18T17:33:49.419Z",
+            "modified": "2025-03-21T14:11:49.859Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"app_consumer_001@api.com\",\n  \"password\": \"abc123456\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "e5de1bb1-eef4-4805-902f-fcf3a9573d4f",
+            "colId": "2ad06dac-1cd1-417f-8119-84cfe2b34dba",
+            "containerId": "",
+            "name": "Logout",
+            "url": "http://localhost/laravel_api_with_sanctum/public/api/logout",
+            "method": "POST",
+            "sortNum": 25000,
+            "created": "2025-03-21T12:07:40.574Z",
+            "modified": "2025-03-21T12:11:19.863Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"app_consumer_001@api.com\",\n  \"password\": \"abc123456\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "2|IpbqXpm2A1kEMJ5hO3ttzSYco3ieynZleSPeRmaA79435f75"
+            }
+        },
+        {
+            "_id": "672f34bd-31c0-4f15-89e6-0a557be858cd",
+            "colId": "2ad06dac-1cd1-417f-8119-84cfe2b34dba",
+            "containerId": "",
+            "name": "Create client",
+            "url": "http://localhost/laravel_api_with_sanctum/public/api/clients",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2025-03-18T13:37:03.774Z",
+            "modified": "2025-03-20T19:37:29.849Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Rosenberg Piloto\",\n  \"email\": \"rosebergpiloto@email.com\",\n  \"phone\": \"123456789\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "1|uVTlQXm8qBFGhOnFfhNiQnExITfskBiJYD1S4EKJcd3d0f22"
+            }
+        },
+        {
+            "_id": "f62f9f2e-21be-4406-a299-b9f033ef70ef",
+            "colId": "2ad06dac-1cd1-417f-8119-84cfe2b34dba",
+            "containerId": "",
+            "name": "Show client",
+            "url": "http://localhost/laravel_api_with_sanctum/public/api/clients/99",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2025-03-18T13:55:00.184Z",
+            "modified": "2025-03-21T14:12:10.353Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "3|hdXy8DfJp8iFOFigLUmNd0FvazRG0rS4ugoLO1HMf3558eef"
+            }
+        },
+        {
+            "_id": "f0152d23-b03e-4fc0-84af-72e50f3d6411",
+            "colId": "2ad06dac-1cd1-417f-8119-84cfe2b34dba",
+            "containerId": "",
+            "name": "Update client",
+            "url": "http://localhost/laravel_api_with_sanctum/public/api/clients/102",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2025-03-18T14:38:34.600Z",
+            "modified": "2025-03-20T19:37:43.332Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"João Piloto\",\n  \"email\": \"joaopaulopiloto@email.com\",\n  \"phone\": \"123456789\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "1|uVTlQXm8qBFGhOnFfhNiQnExITfskBiJYD1S4EKJcd3d0f22"
+            }
+        },
+        {
+            "_id": "76b6cb08-4a59-45ba-b1c9-6aa26b468ddc",
+            "colId": "2ad06dac-1cd1-417f-8119-84cfe2b34dba",
+            "containerId": "",
+            "name": "Delete client",
+            "url": "http://localhost/laravel_api_with_sanctum/public/api/clients/100",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2025-03-18T16:35:03.129Z",
+            "modified": "2025-03-20T19:39:06.223Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "1|uVTlQXm8qBFGhOnFfhNiQnExITfskBiJYD1S4EKJcd3d0f22"
+            }
+        }
+    ],
+    "ref": "6BFQKw-WRD5PLx_eXE8mFoQeLxvzh3apTJ79FukCjRwgQn_p1G42KGjhTXnPB2RXxqwpfFzbff_KQqOsz-bz2Q"
+}
